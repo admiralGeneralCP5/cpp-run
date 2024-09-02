@@ -18,3 +18,4 @@ file_no_ext = file_split[0]
 
 sb.call(f"g++ {file_name} -o {file_no_ext}", shell=True)  # compile the file
 sb.call(f"./{file_no_ext}", shell=True)  # runs the executable file that was created
+sb.call(f"rm {file_no_ext}", shell=True)  # removes the executable file after it runs
